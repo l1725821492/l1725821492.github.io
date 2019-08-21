@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="L Y">
 <meta property="og:description" content="linux命令笔记">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-08-19T07:46:48.962Z">
+<meta property="og:updated_time" content="2019-08-21T07:57:58.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux命令">
 <meta name="twitter:description" content="linux命令笔记">
@@ -240,12 +240,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="linux命令笔记"><a href="#linux命令笔记" class="headerlink" title="linux命令笔记"></a>linux命令笔记</h1><a id="more"></a>
-<h2 id="1-解锁文件root权限"><a href="#1-解锁文件root权限" class="headerlink" title="1.解锁文件root权限"></a>1.解锁文件root权限</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chmod -R a+w[文件夹路径]</span><br><span class="line">例如：</span><br><span class="line">chmod -R a+w /home/ly/桌面</span><br><span class="line">打开了所有桌面文件的root权限</span><br></pre></td></tr></table></figure>
+        <h3 id="linux命令笔记"><a href="#linux命令笔记" class="headerlink" title="linux命令笔记"></a>linux命令笔记</h3><a id="more"></a>
+<h4 id="1-解锁文件root权限"><a href="#1-解锁文件root权限" class="headerlink" title="1.解锁文件root权限"></a>1.解锁文件root权限</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chmod -R a+w[文件夹路径]</span><br><span class="line">例如：</span><br><span class="line">chmod -R a+w /home/ly/桌面</span><br><span class="line">打开了所有桌面文件的root权限</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-获得root权限"><a href="#2-获得root权限" class="headerlink" title="2.获得root权限"></a>2.获得root权限</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">sudo passwd root</span><br><span class="line">输入新的 UNIX 密码: </span><br><span class="line">重新输入新的 UNIX 密码: </span><br><span class="line">passwd：已成功更新密码</span><br><span class="line">su</span><br><span class="line">密码：输入刚才设置的密码</span><br><span class="line">下次想获得root权限直接输入su即可</span><br></pre></td></tr></table></figure>
+<h4 id="2-获得root权限"><a href="#2-获得root权限" class="headerlink" title="2.获得root权限"></a>2.获得root权限</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">sudo passwd root</span><br><span class="line">输入新的 UNIX 密码: </span><br><span class="line">重新输入新的 UNIX 密码: </span><br><span class="line">passwd：已成功更新密码</span><br><span class="line">su</span><br><span class="line">密码：输入刚才设置的密码</span><br><span class="line">下次想获得root权限直接输入su然后输入刚才设置的密码即可</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-解压命令"><a href="#3-解压命令" class="headerlink" title="3.解压命令"></a>3.解压命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">filename.zip的解压：unzip filename.zip</span><br><span class="line">filename.tar.gz的解压：tar -xvf filename.tar.gz</span><br></pre></td></tr></table></figure>
+<h4 id="3-解压命令"><a href="#3-解压命令" class="headerlink" title="3.解压命令"></a>3.解压命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">filename.zip的解压：unzip filename.zip</span><br><span class="line">filename.tar.gz的解压：tar -xvf filename.tar.gz</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-删除命令-慎用！"><a href="#4-删除命令-慎用！" class="headerlink" title="4.删除命令(慎用！)"></a>4.删除命令(慎用！)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf [文件路径]</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-查询后台程序"><a href="#5-查询后台程序" class="headerlink" title="5.查询后台程序"></a>5.查询后台程序</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ps -ef|grep [你要查询的任务名称]</span><br><span class="line">如 #ps ef|grep python </span><br><span class="line">可用kill+空格+pid(指定任务的pid号)【需要获取root权限】</span><br></pre></td></tr></table></figure>
 
 
       
@@ -353,6 +357,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2019/08/20/2019-8-20-Python-random模块sample、randint、shuffle、choice随机函数概念和应用/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Python random模块sample、randint、shuffle、choice随机函数概念和应用
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -505,6 +523,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
